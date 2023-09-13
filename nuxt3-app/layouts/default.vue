@@ -2,7 +2,7 @@
   <div>
     <header class="shadow-sm bg-white">
       <nav class="container mx-auto p-4 flex justify-between">
-        <NuxtLink to="/" class="font-bold">Nuxt3 App</NuxtLink>
+        <NuxtLink to="/" class="font-bold">Nuxt3 App Example</NuxtLink>
         <div class="flex gap-4">
           <p class="mr-4">Cart ({{ cart.length }})</p>
           <ul class="flex gap-4">
@@ -14,7 +14,9 @@
             <NuxtLink to="/profile">Profile</NuxtLink>
             <button class="ml-4" @click="logout">Logout</button>
           </div>
-          <NuxtLink v-else to="/login">Login</NuxtLink>
+          <div v-else>
+            <NuxtLink to="/login">Login</NuxtLink>
+          </div>
         </div>
       </nav>
     </header>
